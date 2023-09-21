@@ -1,5 +1,6 @@
 <meta charset="UTF-8">
 <script>
+
     /*
     PROBLEMA
     Pergunte ao professor quantas notas o aluno obteve. Na sequência, usando for, peça para o professor informar todas as notas do aluno.
@@ -7,12 +8,16 @@
     */
 
     //ENTRADA
-    
-    
+    let notas = Number(prompt(`Quantas notas o aluno obteve?`).trim())
+    let totalNotas = [];
+
+
 
     //PROCESSAMENTO
-    
-
+    for (let controle = 1; controle <= notas; controle++) {
+        totalNotas = (totalNotas / notas);
+        totalNotas.push(notas);
+    }
     //SAÍDA
 
 </script>
